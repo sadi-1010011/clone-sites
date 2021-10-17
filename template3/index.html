@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template 3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+
+body { background-color: wheat; }
+
+h4 { margin-bottom: 2rem !important; }
+
+.padd { padding-top: 50px;padding-bottom: 50px; }
+
+.t-uc {
+	text-transform: uppercase;
+}
+
+#myheader {
+	position: sticky;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: white;
+	padding: 14px 0px;
+	z-index: 99;
+}
+
+#mybrand {
+	text-transform: capitalize;
+	color: darkblue;
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 0.6rem !important;
+}
+
+.mynavbar {
+	height: 100%;
+	float: right;
+}
+
+.mynavbar > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mynavbar > ul li {
+	display: inline;
+}
+
+.mynavbar > ul li a {
+	font-size: 1.16rem;
+	padding: 0 18px;
+	text-transform: capitalize;
+}
+
+#banner-section {
+	color: black;
+	background-image: url(banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 25vh 0;
+}
+
+.mycard {
+	border: 2px solid white;
+	background-color: white;
+	padding: 20px 10px;
+}
+
+.mybtn {
+	background-color: orange;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.mybtnnobg {
+	background-color: white;
+	color: orange;
+}
+
+/*.mybtnnobg:hover {
+	background-color: orange;
+	color: white;
+}
+*/
+
+.mybtn:hover { color: orange; background-color: white; }
+
+#devs-section {
+	background-color: white;
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+}
+
+.devs-card {
+	max-width: 200px;
+	height: 90px;
+	border-right: 24px solid orange;
+	transition: 0.6s;
+}
+
+.devs-card:hover { border-right: 100px solid orange; }
+
+#events-section {
+	background-color: orange;
+	color: white;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.date-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	width: 50px;
+	height: 50px;
+	color: white;
+	background-color: orange;
+}
+
+#myfooter {
+	padding: 7vh 0;
+}
+
+#shareto {
+	margin: auto;
+	width: 40%;
+}
+
+
+@media screen and (max-width: 764px) {
+	.mycard { margin: 20px 0px; }
+	#myheader { position: relative; }
+}
+
+
+
+	</style>
+</head>
+<body>
+
+<header id="myheader">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-12 text-center">
+				<p id="mybrand">concerted</p>
+			</div>
+			<div class="col-md-9 col-sm-12">
+				<nav class="navbar mynavbar">
+					<ul>
+						<li><a href="">home</a></li>
+						<li><a>clients</a></li>
+						<li><a>contact</a></li>
+						<li><a>career</a></li>
+						<li><a>about</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div></header>
+
+<section id="banner-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<h3>Best creative design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					<button class="btn mybtn">read more</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<h3>Intelligent code</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					<button class="btn mybtn">know more</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<h3>Smart optimization</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					<button class="btn mybtn">get more</button>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+<section id="devs-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="mycard">
+					<h4 class="text-center">Senior Web Dev</h4>
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="banner.jpg" class="devs-card">
+							</div>
+							<div class="col">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<button class="btn mybtnnobg">read more</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mycard">
+					<h4 class="text-center">Junior Web Dev</h4>
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="banner.jpg" class="devs-card">
+							</div>
+							<div class="col">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<button class="btn mybtnnobg">read more</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="mycard">
+					<h4 class="text-center">Assistant web dev</h4>
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<img src="banner.jpg" class="devs-card">
+							</div>
+							<div class="col">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<button class="btn mybtnnobg">read more</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+<section id="events-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-xs-12 padd-50" style="border: 2px solid yellow;background-color: white;color: orange;">
+				<h4 class="text-center"><b>events date.</b></h4>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="date-card">MAR<br>31</div>
+							<h5 class="text-right t-uc">programmers summit</h5>
+							<p class="text-right">nerds special community project.</p>
+							<hr/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="date-card">APR<br/>12</div>
+							<h5 class="text-right t-uc">social activists meet</h5>
+							<p class="text-right">activists generel meeting.</p>
+							<hr/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="date-card">APR<br/>01</div>
+							<h5 class="text-right t-uc">dummies gettogether</h5>
+							<p class="text-right">2020 gettogether of dummies.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-8">
+				<h4 class="text-left">Celebraties participating</h4>
+				<p>This template was created in 22nd march 2020. fully designed coded and developed by <b>sadi</b> if you find anything creative or interesting by this template i recommend you should come and visit my other works too at <i>sadi1010011@gmail.com</i> contact me : 8593022512 , 6238998062</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 padd-10">
+							<img src="banner.jpg" class="devs-card">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img src="banner.jpg" class="devs-card">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img src="banner.jpg" class="devs-card">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img src="banner.jpg" class="devs-card">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+<footer id="myfooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h6 class="text-center">&copy All rights reserved. Design | Code | Developed | by sadi</h6>
+			</div>
+		</div>
+	</div></footer>
+
+</body>
+</html>

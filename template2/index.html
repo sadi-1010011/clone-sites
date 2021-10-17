@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#mytitle {
+	color: black;
+}
+
+#header-part {
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b50d0d;
+}
+
+.mynav {
+	height: 100%;
+	float: right;
+}
+
+.mynav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mynav ul li {
+	display: inline;
+	transition: 0.27s;
+	border-radius: 6px;
+	padding: 10px 16px;
+}
+
+.mynav ul li:hover {
+	background-color: red;
+	color: white;
+}
+
+.mynav ul li a {
+	font-size: 1.14em;
+	color: white;
+	text-decoration: none;
+}
+
+.active {
+	background-color: brown;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.mynav ul li a:hover { color: white; }
+
+#banner-part {
+	padding-top: 9vh;
+	padding-bottom: 8vh;
+	background-color: white;
+}
+
+.myimg {
+	max-width: 96%;
+	height: auto;
+	margin: 5vh 0 3vh 0;
+}
+
+.mybtn {
+	border-radius: 6px;
+	padding: 4px 10px;
+	color: white;
+	font-size: 0.89em;
+	margin-right: 10px;
+	text-transform: capitalize;
+}
+
+.mycard {
+	background-color: rgba(90,90,90,0.2);
+	width: 90%;
+	border-radius: 14px;
+	color: red;
+	padding-top: 3vh;
+	padding-bottom: 2vh;
+	margin-top: 10vh;
+	color: #b50d0d;
+}
+
+.myspace ul li {
+	padding: 1.4vh;
+	font-size: 1em;
+	text-transform: capitalize;
+}
+
+#devs-section {
+	padding-top: 6vh;
+	padding-bottom: 8vh;
+	/*background-color: wheat;*/
+}
+
+#myfooter {
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+	background-color: whitesmoke;
+}
+
+#sadi {
+	color: green;
+}
+#sadi:hover {
+	color: brown;
+}
+
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+
+<header id="header-part">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<h1 id="mytitle">heaven</h1>
+			</div>
+			<div class="col-md-9 text-right">
+				<div class="navbar mynav">
+					<ul>
+						<li class="active"><a href="">home</a></li>
+						<li><a href="">service</a></li>
+						<li><a href="">portfolio</a></li>
+						<li><a href="">about</a></li>
+						<li><a href="">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="banner-part">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h3>Welcome to CODEJAM</h3>
+				<img src="banner.jpg" class="myimg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				<button class="btn-danger active mybtn">read more</button>
+				<button class="btn-danger active mybtn">get quote</button>
+			</div>
+			<div class="col-md-5">
+				<div class="mycard">
+					<h4 class="text-center">catogories</h4>
+					<div class="container myspace">
+						<ul>
+							<li><a href="">google codejam</a></li>
+							<li><a href="">microsoft codejam</a></li>
+							<li><a href="">facebook codejam</a></li>
+							<li><a href="">amazon codejam</a></li>
+							<li><a href="">ibm codejam</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="devs-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="devs-card">
+					<h3>web developer</h3>
+					<img src="banner.jpg" class="myimg">
+					<p>hi everybody , this is a sample template i coded for practice if it helps others to learn more i will do more.</p>
+					<button class="active">get more</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="devs-card">
+					<h3>web designer</h3>
+					<img src="banner.jpg" class="myimg">
+					<p>hi everybody , this is a sample template i coded for practice if it helps others to learn more i will do more.</p>
+					<button class="active">do more</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="devs-card">
+					<h3>seo manager</h3>
+					<img src="banner.jpg" class="myimg">
+					<p>hi everybody , this is a sample template i coded for practice if it helps others to learn more i will do more.</p>
+					<button class="active">learn more</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="myfooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h6 class="text-center">&copy All rights reserved. Design | Code | Developed | by 
+					<a href="" id="sadi">sadi</a>
+				</h6>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

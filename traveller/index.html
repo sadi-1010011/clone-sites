@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRAVELLER COPY</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <style type="text/css">
+    	
+.transp-box { opacity: 0; }
+
+    </style>
+</head>
+<body>
+
+<div class="mytopbar" onclick="togglenavbar();">
+    <span class="topbar-line"></span>
+    <span class="topbar-line"></span>
+    <span class="topbar-line"></span>
+</div>
+
+<div class="topnavbar" id="togglebar">
+	<ul>
+		<li><a href="">home</a></li>
+		<li><a href="">travel</a></li>
+		<li><a href="">destination</a></li>
+		<li><a href="">explore</a></li>
+	</ul>
+</div>
+
+<div class="header">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-3 h">
+    			<h2 class="mytitle">traveler .</h2>
+    		</div>
+    		<div class="col-md-9">
+    			<nav class="navbar mynav">
+    				<ul>
+    					<li class="active"><a href="">destination</a></li>
+    					<li><a href="">travel</a></li>
+    					<li><a href="">pricing</a></li>
+    					<li><a href="">contact</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</div>
+    </div>
+</div>
+
+<section id="banner-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 fadeInUp animated-fast">
+				<h1 class="mybigtitle">planing trip to anywhere in the world?</h1>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div class="myformcard fadeInRight animated-fast">
+					<h4>book your trip</h4>
+					<div class="myrow">
+						<p>your name</p>
+						<input type="text" name="name" class="mybox">
+					</div>
+					<div class="myrow">
+						<p>Activities</p>
+						<input type="text" name="name" class="mybox">
+					</div>
+					<div class="myrow">
+						<p>Destination</p>
+						<input type="text" name="name" class="mybox">
+					</div>
+					<div class="myrow">
+						<p>Date travel</p>
+						<input type="text" name="name" class="mybox">
+						<input type="submit" name="submitall" class="mysubmit" onclick="checkform();">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="travelers-section">
+	<div class="container text-center">
+		<h1>Most Popular Destination</h1>
+		<p>inspired by the great explorers in the world.</p>
+	</div>
+	<div class="padd-5"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="mytripcard text-center">
+					<img src="banner.jpg">
+					<h5 class="triptext">New York, USA</h5>
+					<p class="trippara">one of the must visit places on the earth. if you are not born here</p>
+					<button class="tripbtn">schedule a trip</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="counter-section">
+	<div class="container fadeInUp animated-fast">
+	<h2 class="smallbigtxt text-center fadeInUp animated-fast">how it works</h2>
+	<p class="text-center c-grey">right attitude makes you closer to success.</p>
+	</div>
+	<div class="padd-5"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="container text-center resp-collapse fadeIn animated-fast">
+					<span class="counter">
+						<i>36</i>
+					</span>
+					<h5 class="spacetext">time is precious so make it count</h5>
+					<p class="c-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="container text-center resp-collapse fadeIn animated-fast">
+					<span class="counter">
+						<i>93</i>
+					</span>
+					<h5 class="spacetext">let every moment be memorable</h5>
+					<p class="c-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="container text-center resp-collapse fadeIn animated-fast">
+					<span class="counter">
+						<i>69</i>
+					</span>
+					<h5 class="spacetext">its beyond expensive yet free</h5>
+					<p class="c-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="quote-section">
+	<div class="container">
+		<div class="row">
+			<h1 class="mybigtitle-2">we have high quality services that you will surely love!</h1>
+		</div>
+	</div>
+</section>
+
+<section id="story-section">
+	<div class="container text-center">
+		<h1 class="smallbigtxt c-black">our success</h1>
+		<p class="trippara c-grey">actually we are not the best coz no one is best</p>
+	</div>
+	<div class="container">
+		<div class="padd-5"></div>
+		<div class="row text-center animated">
+			<div class="col-md-3 fadeInUp animated-fast">
+				<span class="counter-2"><i>675</i></span>
+				<p class="c-grey smalltitle">destination</p>
+			</div>
+			<div class="col-md-3 fadeInUp animated-fast">
+				<span class="counter-2"><i>92374</i></span>
+				<p class="c-grey smalltitle">hotels</p>
+			</div>
+			<div class="col-md-3 fadeInUp animated-fast">
+				<span class="counter-2"><i>37723</i></span>
+				<p class="c-grey smalltitle">travelers</p>
+			</div>
+			<div class="col-md-3 fadeInUp animated-fast">
+				<span class="counter-2"><i>28723</i></span>
+				<p class="c-grey smalltitle">happy customers</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="subscribe-section">
+	<div class="container text-center fadeInUp animated-fast">
+		<h1 class="smallbigtxt c-white">subscribe</h1>
+		<p class="trippara c-grey">be the first to get latest updates</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 fadeInUp animated-fast">
+				<input type="text" name="subscribername" class="btn-mail b-transp" placeholder="your email">
+			</div>
+			<div class="col-md-6 fadeInUp animated-fast">
+				<input type="submit" name="submitme" class="mybtnbox b-cyan">
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="myfooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h6 class="text-center">&copy All rights reserved. Design | Code | Developed | by sadi</h6>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+
+function togglenavbar() {
+	$("#togglebar").toggle(900);
+}
+
+function checkform() {
+	let vals = $(".mybox").val();
+	if (vals=="") {
+		$(".mybox").attr("placeholder","this field is required !");
+	}
+	else {
+		//submit form to server code here...
+	}
+}
+
+</script>
+</body>
+</html>

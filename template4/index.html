@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: grey;
+}
+
+.mybrand {
+	color: yellow;
+	font-family: segoe ui, arial , sans-serif;
+	letter-spacing: -4px;
+}
+
+#myheader {
+	position: sticky;
+	top: 0px;
+	padding: 10px 0;
+	background-color: brown;
+	z-index: 99;
+}
+
+.mynav {
+	float: right;
+}
+
+.mynav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mynav ul li {
+	display: inline;
+}
+
+.mynav ul li a {
+	padding: 8px 20px;
+	text-decoration: none;
+	color: white;
+	border-radius: 6px;
+	text-transform: capitalize;
+	transition: .28s;
+}
+
+.mynav ul li a:hover {background-color: orange;}
+
+.active {
+	background-color: orange;
+}
+
+#mybanner {
+	padding: 15vh 0;
+	background-color: red;
+}
+
+.mytitle {
+	color: white;
+	text-transform: uppercase;
+}
+
+.mypara {
+	color: lightgrey; 
+	width: 60%;
+	margin: auto;
+}
+
+.mybtn {
+	padding: 5px 20px;
+	margin-top: 5vh;
+}
+
+#mysection-1 {
+	text-align: center;
+	padding: 8vh 0;
+}
+
+#mysection-2 {
+	text-align: center;
+	padding: 8vh 0;
+	background-color: darkgrey;
+}
+
+.myimg {
+	width: 66%;
+	margin: auto;
+	padding-top: 4vh;
+	padding-bottom: 8vh;
+}
+
+.myimg img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.mycard {
+	border: 2px solid white;
+	background-color: darkgrey;
+	padding: 30px 20px;
+}
+
+#myfooter {
+	padding: 7vh 0;
+	background-color: black;
+	color: white;
+}
+
+@media screen and (max-width: 764px) {
+	.mycard { margin: 20px 10px; }
+}
+
+	</style>
+</head>
+<body>
+
+
+<header id="myheader">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<h2 class="mybrand">REDROSE</h2>
+			</div>
+			<div class="col-md-9">
+				<nav class="navbar mynav">
+					<ul>
+						<li><a href="" class="active">home</a></li>
+						<li><a href="">clients</a></li>
+						<li><a href="">about</a></li>
+						<li><a href="">career</a></li>
+						<li><a href="">contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="mybanner" class="text-center">
+	<h1 class="text-center mytitle">dont just exist live</h1>
+	<p class="text-center c-grey">live life to the fullest</p>
+	<button class="btn mybtn">LIVE</button>
+</section>
+
+<section id="mysection-1">
+	<h3 class="text-center mytitle">you have only one life.</h3><br/>
+	<p class="text-center mypara">live life to the fullest.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br/>
+	<button class="btn mybtn btn-danger">ENJOY LIFE</button>
+</section>
+
+<section id="mysection-2">
+	<div class="myimg">
+		<img src="banner.jpg">
+	</div>
+	<h3 class="text-center mytitle">you have only one life.</h3><br/>
+	<p class="text-center mypara">live life to the fullest.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br/>
+	<button class="btn mybtn btn-success">ENJOY LIFE</button>
+</section>
+
+<section id="mysection-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor khafah ahfkajh kahf  hsafkj ahfah ahhkj</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor lasfkj sfdhjkash kafjhkhaf ahf ahia khfah.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 text-center">
+				<div class="mycard">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor jkshf fakafafhfd floajf ajk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="btn mybtn btn-warning">EXPLORE THE WORLD</button>
+</section>
+
+<footer id="myfooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h6 class="text-center">&copy All rights reserved. Design | Code | Developed | by sadi</h6>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>

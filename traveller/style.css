@@ -1,0 +1,324 @@
+    
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: black;
+}
+
+* { box-sizing: border-box;}
+
+.header {
+    padding: 10px 0px;
+}
+
+.mytitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: -1px;
+	line-height: 48px;
+}
+
+.mynav {
+	float: right;
+}
+
+.mynav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mynav ul li {
+	display: inline;
+}
+
+.mynav ul li a {
+	padding-right: 14px;
+	padding-left: 14px;
+	text-transform: capitalize;
+	line-height: 32px;
+	transition: 0.3s;
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+
+.mynav ul li a:hover { color: white; }
+
+#banner-section {
+	padding: 10vh 0;
+	background-image: url(b1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.mybigtitle {
+	color: white;
+	font-size: 4rem;
+	margin: 3em 0;
+	text-transform: capitalize;
+}
+
+.myformcard {
+	width: 62%;
+	margin-left: 22vh;
+	margin-top: 10vh;
+	border-top: 12px solid cyan;
+	padding: 3.5vh 3.5vh;
+	background-color: rgba(255,255,255,0.85);
+	text-transform: capitalize;
+}
+
+.myformcard h4 {
+	font-weight: normal !important;
+	margin-bottom: 14px;
+}
+
+.myrow {
+	margin-bottom: 12px;
+}
+
+.mybox {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+}
+
+.mybox:hover {
+	border: 1px solid grey;
+}
+
+p {margin-bottom: 6px;}
+.padd-5 {padding: 5vh 0;}
+
+.mysubmit {
+	background-color: cyan;
+	border: none;
+	outline: none;
+	margin-top: 2vh;
+	width: 100%;
+	font-size: large;
+	padding: 6px 0;
+	border-radius: 5px
+}
+
+#travelers-section {
+	padding: 7em 0;
+	background-color: white;
+}
+
+.mytripcard {
+	border: 1px solid lightgrey;
+	background-color: white;
+	padding-bottom: 2vh;
+	margin-bottom: 4vh;
+	transition: 0.34s;
+}
+
+.mytripcard:hover {box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.8);}
+
+.mytripcard img {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2vh;
+}
+
+.triptext {
+	color: cyan;
+}
+
+.trippara {
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height: 1.8;
+}
+
+.tripbtn {
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	color: white;
+	background-color: black;
+	padding: 10px 20px;
+	margin: 2vh auto;
+	transition:0.42s;
+}
+
+.tripbtn:hover {background-color: cyan; color: black;}
+
+#counter-section {
+	padding: 7rem 0;
+	background-color: #09C6AB;
+}
+
+.smallbigtxt {
+	color: white;
+	font-size: 3rem;
+	text-transform: capitalize;
+	word-spacing: 5px;
+	font-weight: normal;
+}
+
+.counter {
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: transparent;
+	margin: auto;
+	font-size: 40px;
+	color: white;
+	padding: 26px;
+}
+
+.spacetext {
+	margin-top: 6vh;
+	margin-bottom: 2vh;
+	color: white;
+	line-height: 1.7;
+	text-transform: capitalize;
+}
+
+#quote-section {
+	padding: 4em 0;
+	background-color: grey;
+}
+
+.mybigtitle-2 {
+	color: white;
+	font-size: 3rem;
+	margin: 3em auto;
+	text-transform: capitalize;
+	width: 70%;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.7;
+}
+
+#story-section {
+	padding: 6em 0;
+	background-color: white;
+}
+
+.counter-2 {
+	font-size: 40px;
+	color: #09C6AB;
+}
+
+.c-grey { color: grey; }
+.c-black { color: black; }
+.c-white { color: white; }
+.b-transp { background-color: transparent; }
+.b-cyan { background-color: cyan; }
+
+.smalltitle {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	margin: 3vh;
+}
+
+#subscribe-section {
+	padding: 7em 0;
+	background-color: darkblue;
+}
+
+.btn-mail {
+	background-color: transparent;
+	color: white;
+	width: 70%;
+	margin: 5vh 0 2vh 0;
+	padding: 0 10px;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+	float: right;
+}
+
+.mybtnbox {
+	width: 70%;
+	margin: 5vh 0 2vh 0;
+	padding: 0;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+}
+
+#myfooter {
+	padding: 7vh 0;
+	background-color: black;
+	color: white;
+}
+
+.resp-collapse { margin-top: 50px; }
+
+.mytopbar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 26px;	
+	transition: 0.45s;
+	transform: rotate(90deg);
+	z-index: 101
+}
+
+.mytopbar:hover .topbar-line{
+	background-color: red;
+}
+
+.topbar-line {
+	border-radius: 4px;
+	background-color: white;
+	padding: 2px;
+	margin-right: 4px;
+	transition: 0.45s;
+}
+
+.topnavbar {
+	display: none;
+	width: 100%;
+	background-color: black;
+	padding: 2em 0;
+}
+
+.topnavbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.topnavbar ul li {
+	margin: 20px 0;
+}
+
+.topnavbar ul li a {
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.16rem;
+	letter-spacing: 2px;
+}
+
+
+@media screen and (min-width: 760px) {
+	.mytopbar { display: none; }
+	.topnavbar { display: none; }
+}
+
+@media screen and (max-width: 760px) {
+	.btn-mail { clear: both; width: 100%; text-align: center; }
+	.mybtnbox { width: 100%; margin: 0vh;}
+	.mybigtitle { margin: 2rem 0; }
+	.myformcard { width: 80%; margin-left: 6vh; margin-top: 10vh;}
+	.mynav { display: none; }
+	.mytopbar {display: block;}
+}
+
+@media screen and (max-width: 580px) {
+	.mytripcard { transform: scale(0.9); }
+	.resp-collapse { margin-top: 60px; }
+}

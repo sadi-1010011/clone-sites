@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESPONSIVE 1</title>
+	<style type="text/css">
+
+a:link {color: #000000}
+a:visited {color: #FFCC00}
+a:hover {color: #006600}
+a:active {color: #FF00CC}
+
+a { text-decoration: none; }
+
+* { box-sizing: border-box; }
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color: white;
+	font-family: sans-serif;
+	background-color: black;
+}
+
+.container {
+	/*border: 2px solid red;*/
+	margin-right: 15px;
+	margin-left: 15px;
+	padding: 2px;
+	text-align: center;
+}
+
+#main-banner {
+	/*background-image: url(bg1.jpg);*/
+	/*background-size: cover;*/
+}
+
+#head-section {
+	width: 86%;
+	margin: auto;
+	margin-top: 120px;
+}
+
+#head-title {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#head-title > p {
+	margin: 0;
+	text-transform: capitalize;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#navbar {
+	display: inline-block;
+	float: right;
+	margin-top: -30px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	display: inline;
+	border-radius: 4px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	padding: 9px;
+	font-size: 14px;
+}
+
+.active-tab {
+	background-color: #2651a8;
+}
+
+#main-text {
+	text-align: center;
+	margin-top: 26vh;
+	margin-bottom: 6px;
+	font-size: 4.2em;
+}
+
+#below-text {
+	text-align: center;
+	color: darkgrey;
+	font-size: 1.8em;
+	margin: 0;
+}
+
+.mybtn {
+	border: none;
+	border-radius: 6px;
+	display: block;
+	margin: 100px auto;
+	text-transform: lowercase;
+	letter-spacing: 2px;
+	padding: 20px;
+	min-width: 240px;
+	max-width: 260px;
+	font-size: 1em;
+	color: white;
+}
+
+.mysmallbtn {
+	border: none;
+	border-radius: 6px;
+	display: block;
+	margin: 40px auto;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	padding: 15px;
+	min-width: 160px;
+	max-width: 180px;
+	font-size: 1em;
+	color: white;
+}
+
+#second-section {
+	background-color: white;
+	color: black;
+	padding: 60px 0;
+}
+
+#third-section {
+	background-color: darkblue;
+	color: white;
+	padding-top: 60px;
+}
+
+#final-section {
+	background-color: black;
+	color: white;
+	padding: 60px;
+}
+.common-text {
+	text-align: center;
+	font-size: 2.4em;
+	text-transform: capitalize;
+	opacity: 0.8;
+	margin: 0;
+}
+
+.sub-text {
+	text-align: center;
+	margin: 0px;
+	font-size: 1.4em;
+	opacity: 0.8;
+	color: lightgrey;
+}
+
+.common-subtext {
+	text-align: center;
+	font-size: 1em;
+	color: grey;
+	line-height: 1.7;
+	word-spacing: 2px;
+}
+
+#seperate-subtext {
+	text-align: center;
+	font-size: 1em;
+	color: grey;
+	line-height: 1.7;
+	word-spacing: 2px;
+	width: 70%;
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.card {
+	width: 28%;
+	min-height: 200px;
+	padding: 20px;
+}
+
+@media only screen and (max-width: 1020px) {
+	#head-title { display:block;text-align:center;padding-bottom:20px; }
+	#head-section { margin-top:80px; width: 90%; }
+	#navbar { display: block; float: none; margin-top: 10px;}
+	#navbar ul { text-align: center; }
+	#main-text { font-size: 3em; }
+	#below-text { font-size: 1.2em; }
+	.card { width: 30%;padding: 16px; }
+}
+
+@media only screen and (max-width: 765px) {
+	.card-container { display: block; }
+	.card { width: 100%; }
+	#seperate-subtext { width: 80%;margin: 24px auto; }
+}
+
+
+	</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	$('#navbar ul li').click(function(){
+		$(this).toggleClass('active-tab');
+	});
+})
+
+</script>
+
+
+</head>
+<body>
+
+<div id="main-banner">
+	<div id="head-section">
+		<div id="head-title">
+			<p>assembly</p>
+		</div>
+		<div class="container">
+			<div id="navbar">
+				<ul>
+					<li class="active-tab">homepage</li>
+					<li>our clients</li>
+					<li>about us</li>
+					<li>careers</li>
+					<li>contact</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h1 id="main-text">reconstructing old template</h1>
+		<p id="below-text">making them responsive</p>
+	</div>
+	<div class="container">
+		<button class="mybtn active-tab">responsive check</button>
+	</div>
+</div>
+
+<div id="second-section">
+	<h2 class="common-text">polished to responsive without bootstrap</h2>
+	<p class="sub-text">no external third party libraries</p>
+	<div class="container">
+		<div class="card-container">
+			<div class="card">
+				<p class="common-subtext">this is done with the powerful modern flexbox algorithm one of the most efficient algorithms written for the purpose of easier and faster web development process. Thanks to the great community out there for this great team work and the result that made millions of developers code efficiently.</p>
+				<button class="mysmallbtn active-tab">more info</button>
+			</div>
+			<div class="card">
+				<p class="common-subtext">this is done with the powerful modern flexbox algorithm one of the most efficient algorithms written for the purpose of easier and faster web development process. Thanks to the great community out there for this great team work and the result that made millions of developers code efficiently.</p>
+				<button class="mysmallbtn active-tab">more info</button>
+			</div>
+			<div class="card">
+				<p class="common-subtext">this is done with the powerful modern flexbox algorithm one of the most efficient algorithms written for the purpose of easier and faster web development process. Thanks to the great community out there for this great team work and the result that made millions of developers code efficiently.</p>
+				<button class="mysmallbtn active-tab">more info</button>
+			 </div>
+		</div>
+	</div>
+</div>
+
+<div id="third-section">
+	<div class="container">
+		<h2 class="common-text">no bootstrap no w3 no third parties</h2>
+		<p class="sub-text">free template clone</p>
+		<div class="card-container">
+			<p id="seperate-subtext">this is done with the powerful modern flexbox algorithm one of the most efficient algorithms written for the purpose of easier and faster web development process.Thanks to the great community out there for this great team work and the result that made millions of developers code efficiently.</p>
+		</div>
+		<button class="mybtn" style="color: blue !important; margin: 70px auto">Say Thanks</button>
+	</div>
+</div>
+
+<div id="final-section">
+	<div class="container">
+	<p id="sub-text">
+		Email @<a href="#">sadi1010011</a>. All rights reserved | UI UX | Design Layout | Code | by <a href="#">sadi</a>.
+	</p>
+	</div>
+</div>
+
+</body>
+</html>
